@@ -14,7 +14,7 @@ At least I was enjoying writing this  tiny program. It was a fun.
 caocao999
 
 ==================================================================================================
-Usage for Japaense readers
+Usage for Japanese readers
 
 インストールと実行の手引き
 
