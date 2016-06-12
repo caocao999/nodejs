@@ -1,4 +1,5 @@
 # nodejs
+
 learning node.js
 
 
@@ -14,6 +15,7 @@ At least I was enjoying writing this  tiny program. It was a fun.
 caocao999
 
 ==================================================================================================
+
 Usage for Japanese readers
 
 インストールと実行の手引き
@@ -30,9 +32,9 @@ Windowsでは動作確認は十分いてませんが。
 3.場合によりますが、一応node.jsのインストールディレクトリには
   パスは通した方がいいかも（パスの通し方はプラットフォームとOS依存）。
   
-4.moduleの読み込み。コマンドラインで以下を実行
-   npm install ejs
-   npm install qs
+4.moduleの読み込み。コマンドラインで以下を実行  
+   npm install ejs  
+   npm install qs  
 
 5.TCPの３０００番ポートを利用可能にす事（macやWindowsなら特に何もしなくても良いかも）。
 
