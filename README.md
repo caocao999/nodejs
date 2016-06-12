@@ -12,3 +12,36 @@ People often write a program for money.  Fact of life!
 At least I was enjoying writing this  tiny program. It was a fun.
 
 caocao999
+
+==================================================================================================
+Usage for Japaense readers
+
+インストールと実行の手引き
+
+基本JavaScriptですからWindowsであれMacであれ動作するもの思われます、
+Windowsでは動作確認は十分いてませんが。
+
+インストールと実行は、特に難しいことはありません。　一応、手順を順番に整理すると
+
+1.node.jsをインストール（公式サイトがあります）。
+
+2.Githubから資源一式をダウンロード、任意のディレクトリに配置。
+
+3.場合によりますが、一応node.jsのインストールディレクトリには
+  パスは通した方がいいかも（パスの通し方はプラットフォームとOS依存）。
+
+4.TCPの３０００番ポートを利用可能にす事（macやWindowsなら特に何もしなくても良いかも）。
+
+5.server.jsをコマンドラインで実行
+
+caocao999
+
+
+
+
+
+
+
+
+
+
