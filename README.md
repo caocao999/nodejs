@@ -9,6 +9,6 @@ Programing should be a fun.  It is suppose to be an excite experience.
 But I must accept sometimes programing is not a fun. 
 People often write a program for money.  Facts of life!
 
-At least this time I took a lot of joy from writing this a tiny program.
+At least I was enjoying writing this  tiny program. It was a fun.
 
 caocao999
