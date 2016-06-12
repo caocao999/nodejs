@@ -29,12 +29,16 @@ Windowsでは動作確認は十分いてませんが。
 
 3.場合によりますが、一応node.jsのインストールディレクトリには
   パスは通した方がいいかも（パスの通し方はプラットフォームとOS依存）。
+  
+4.moduleの読み込み。コマンドラインで以下を実行
+   npm install ejs
+   npm install qs
 
-4.TCPの３０００番ポートを利用可能にす事（macやWindowsなら特に何もしなくても良いかも）。
+5.TCPの３０００番ポートを利用可能にす事（macやWindowsなら特に何もしなくても良いかも）。
 
-5.server.jsをコマンドラインで実行("node server.js"とコマンドラインで入力)
+6.server.jsをコマンドラインで実行("node server.js"とコマンドラインで入力)
 
-6.urlはhttp://サーバ名(ip-address):3000でOKです。ローカルならhttp://localhost:3000でも可です。
+7.urlはhttp://サーバ名(ip-address):3000でOKです。ローカルならhttp://localhost:3000でも可です。
 
 caocao999
 
