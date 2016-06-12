@@ -34,6 +34,8 @@ Windowsでは動作確認は十分いてませんが。
 
 5.server.jsをコマンドラインで実行
 
+6.urlはhttp://サーバ名(ip-address):3000でOKです。ローカルならhttp://localhost:3000でも可です。
+
 caocao999
 
 
