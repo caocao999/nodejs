@@ -7,7 +7,7 @@ Even though this is a tiny web server, it was a completely new experience for me
 
 Programing should be a fun.  It is suppose to be an excite experience. 
 But I must accept sometimes programing is not a fun. 
-People often write a program for money.  Facts of life!
+People often write a program for money.  Fact of life!
 
 At least I was enjoying writing this  tiny program. It was a fun.
 
