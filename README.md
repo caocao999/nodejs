@@ -32,7 +32,7 @@ Windowsでは動作確認は十分いてませんが。
 
 4.TCPの３０００番ポートを利用可能にす事（macやWindowsなら特に何もしなくても良いかも）。
 
-5.server.jsをコマンドラインで実行
+5.server.jsをコマンドラインで実行("node server.js"とコマンドラインで入力)
 
 6.urlはhttp://サーバ名(ip-address):3000でOKです。ローカルならhttp://localhost:3000でも可です。
 
