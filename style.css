@@ -2,10 +2,22 @@
 
 
 body {
-  font-family: cursive;
-
+  font-family: sans-serif;
+  width: 800px ;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 table {
-  background-color: #AAAA88;
+  background-color: #FFFFFF;
+}
+
+.message {
+  width: = "200";
+}
+
+h1 {
+  background-color: blue;
+  text-align: center;
+  color: white;
 }

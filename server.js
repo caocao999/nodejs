@@ -2,11 +2,12 @@ var http = require('http');
 var url = require('url');
 var fs = require('fs');
 var ejs = require('ejs') ;
-
+var qs = require('qs');
 
 var index = fs.readFileSync('./index.ejs','UTF-8');
 var style = fs.readFileSync('./style.css','UTF-8');
 var jscript = fs.readFileSync('./jscript.js','UTF-8');
+
 
 var messages = [] ;
 
@@ -29,30 +30,36 @@ http.createServer(function(request,response){
       }
     });
   }
-
-  if(!response.finished){
-    response.writeHead(404);
-    response.end('Page is not found!');
-  }
 }).listen(3000) ;
 
 
 function main_handler(request,response){
-  response.writeHead(200,{'Content-type':'text/html'});
   console.log('main here1');
 
-  var tmp = "";
 
-  if(request.method === 'GET'){
-    tmp = ejs.render(index,{title:"Sample Page",msg:"Hello,World!!"}) ;
-  } else if(request.method === 'POST') {
-    tmp = ejs.render(index,{title:"POST Page",msg:"Hello,World!!"}) ;
+  if(request.method === 'POST') {
+    var reqBody = '';
+    request.on('data',function(data){
+      reqBody += data ;
+    });
+    request.on('end', function(){
+      var form = qs.parse(reqBody) ;
+      var currentTime = new Date().toString();
+      var item = {'time':currentTime,'body':form.message};
+      console.log('item');
+      messages.push(item);
+      var tmp = ejs.render(index,{title:"sample page",msg:"Hello,World!!",messages:messages}) ;
+      response.writeHead(200,{'Content-type':'text/html'});
+      response.write(tmp) ;
+      response.end();
+    });
   } else {
-    tmp = ejs.render(index,{title:"エラーページ",msg:"Hello,World!!"}) ;
+    var tmp = ejs.render(index,{title:"エラーページ",msg:"Hello,World!!",messages:messages}) ;
+    response.writeHead(200,{'Content-type':'text/html'});
+    response.write(tmp) ;
+    response.end();
+    console.log('main here2');
   }
-  response.write(tmp) ;
-  response.end();
-  console.log('main here2');
 }
 
 

@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <meta charset="utf-8">
     <title><%= title %></title>
     <link rel="stylesheet" href="style.css" type="text/css">
   </head>
   <body>
+    <h1>ひとこと伝言板</h1>
     <%= msg  %>
 
     <form method="post" action="/">
       <table border="1" cellspacing="0">
         <tr>
-          <td>メッセージ１</td><td><input type="text" name="message" >
+          <th>メッセージ１</th><td><input type="text"  name="message" >
         </tr>
         <tr>
           <td></td><td><input type="submit" value="投稿"></td>
         </tr>
       </table>
     </form>
+　　<hr>
+  <table border="1"  cellspacing="0">
+    <%  for(var i = 0 ; i < messages.length ; i++) {  %>
+     <tr><td><%= messages[i].time %></td><td class="message"><%= messages[i].body %></td></tr>
+    <% }  %>
+
+
+  </table>
   </body>
 </html>
