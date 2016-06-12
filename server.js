@@ -44,17 +44,18 @@ function main_handler(request,response){
     });
     request.on('end', function(){
       var form = qs.parse(reqBody) ;
-      var currentTime = new Date().toString();
+      var dt = new Date();
+      var currentTime = dt.getFullYear()+"/"+dt.getMonth()+"/"+dt.getDate()+" "+dt.getHours()+":"+dt.getMinutes()+":"+dt.getSeconds();
       var item = {'time':currentTime,'body':form.message};
       console.log('item');
       messages.push(item);
-      var tmp = ejs.render(index,{title:"sample page",msg:"Hello,World!!",messages:messages}) ;
+      var tmp = ejs.render(index,{title:"sample page",msg:"伝言をどうぞ",messages:messages}) ;
       response.writeHead(200,{'Content-type':'text/html'});
       response.write(tmp) ;
       response.end();
     });
   } else {
-    var tmp = ejs.render(index,{title:"エラーページ",msg:"Hello,World!!",messages:messages}) ;
+    var tmp = ejs.render(index,{title:"sample page",msg:"伝言をどうぞ",messages:messages}) ;
     response.writeHead(200,{'Content-type':'text/html'});
     response.write(tmp) ;
     response.end();

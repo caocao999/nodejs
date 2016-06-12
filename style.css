@@ -8,9 +8,6 @@ body {
   margin-right: auto;
 }
 
-table {
-  background-color: #FFFFFF;
-}
 
 .message {
   width: = "200";
@@ -20,4 +17,33 @@ h1 {
   background-color: blue;
   text-align: center;
   color: white;
+}
+
+table {
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+td {
+    border: 1px solid #CCCCCC;
+    padding: 0px 0px 0px 0x;
+}
+th {
+    border: 1px solid #CCCCCC;
+    padding: 0px 0px 0px 0x;
+    background-color: #BBBBaa;
+}
+
+
+input[type="submit"] {
+  font-weight: bold;
+  font-size: 20px;
+}
+input[type="text"] {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: blue;
+  font-size: 14px;
+  height:98%;
+  border: none;
 }
